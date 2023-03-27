@@ -1,5 +1,5 @@
 {
-  "name": "depchecker",
+  "name": "undep",
   "version": "1.0.0",
   "description": "Simple node.js script for listing unused dependencies that are in your package.json.",
   "main": "index.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bradkowalczyk/depchecker.git"
+    "url": "git+https://github.com/bradkowalczyk/undep.git"
   },
   "keywords": [
     "dep",
@@ -22,7 +22,7 @@
   "author": "Brad Kowalczyk",
   "license": "CC0-1.0",
   "bugs": {
-    "url": "https://github.com/bradkowalczyk/depchecker/issues"
+    "url": "https://github.com/bradkowalczyk/undep/issues"
   },
-  "homepage": "https://github.com/bradkowalczyk/depchecker#readme"
+  "homepage": "https://github.com/bradkowalczyk/undep#readme"
 }
