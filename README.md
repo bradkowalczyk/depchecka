@@ -30,3 +30,6 @@ Unused deps: {
   stylis: '4.1.0'
 }
 ```
+
+### Pre-requisites
+`depchecka` requires node >= 18.11.0 in order to run
