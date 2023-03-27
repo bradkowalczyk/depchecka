@@ -1,19 +1,21 @@
 # depchecka
-A simple node.js script for listing unused dependencies that are in your `package.json`.
+A simple node.js script for finding unused dependencies that are in your `package.json`.
 
-`depchecka` will load `package.json` from the current working directory to read the list of dependencies and then recursively traverse the directory tree starting at the specified directory path, processing all javascript files (`.js`, `.jsx`, `.ts`, `.tsx`, `.astro`, `.svelte`). The list of dependencies not found used in any of those files is shown on completion.
+`depchecka` will load the list of `dependencies` from the `package.json` file found in the current working directory and then recursively traverse the directory tree starting at the specified directory path, processing all javascript files (`.js`, `.jsx`, `.ts`, `.tsx`, `.astro`, `.svelte`), looking for use of those dependencies. The list of unused dependencies is shown on completion.
+
+*NOTE: Some frameworks may include dependencies in `package.json` that may be listed as unused by this tool. Also, if you have installed dev dependencies as regular dependencies these may also be listed as unused.*
 
 ## Usage
-From the root of your project (where `package.json` lives) run:
+From the root of your project (where the main `package.json` lives) run:
 ```
 npx depchecka ./path/to/entry-point
 ```
 
-`./path/to/entry-point` should be your source directory or where you want `depchecka` to start recursively looking for deps used (defaults to `./src`).
+`./path/to/entry-point` should be your source directory or where you want `depchecka` to start recursively looking for dependencies used (defaults to `./src`).
 
 ### Example
 ```
-npx depchecka ./src
+➜ npx depchecka ./src
 Processed 1288 files in 496ms
 
 Unused deps: {
