@@ -1,13 +1,12 @@
 {
   "name": "depchecka",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple node.js script for listing unused dependencies that are in your package.json.",
-  "main": "index.js",
   "engines": {
     "node": ">=18.11.0"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "bin": {
+    "depchecka": "bin/depchecka.js"
   },
   "repository": {
     "type": "git",
