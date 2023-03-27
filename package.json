@@ -1,0 +1,28 @@
+{
+  "name": "depchecker",
+  "version": "1.0.0",
+  "description": "Simple node.js script for listing unused dependencies that are in your package.json.",
+  "main": "index.js",
+  "engines": {
+    "node": ">=18.11.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bradkowalczyk/depchecker.git"
+  },
+  "keywords": [
+    "dep",
+    "checker",
+    "dependencies",
+    "unused"
+  ],
+  "author": "Brad Kowalczyk",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/bradkowalczyk/depchecker/issues"
+  },
+  "homepage": "https://github.com/bradkowalczyk/depchecker#readme"
+}
