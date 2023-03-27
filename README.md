@@ -1,19 +1,19 @@
-# undep
+# depchecka
 A simple node.js script for listing unused dependencies that are in your `package.json`.
 
-`undep` will load `package.json` from the current working directory to read the list of dependencies and then recursively traverse the directory tree starting at the specified directory path, processing all javascript files (`.js`, `.jsx`, `.ts`, `.tsx`, `.astro`, `.svelte`). The list of dependencies not found used in any of those files is shown on completion.
+`depchecka` will load `package.json` from the current working directory to read the list of dependencies and then recursively traverse the directory tree starting at the specified directory path, processing all javascript files (`.js`, `.jsx`, `.ts`, `.tsx`, `.astro`, `.svelte`). The list of dependencies not found used in any of those files is shown on completion.
 
 ## Usage
 From the root of your project (where `package.json` lives) run:
 ```
-npx undep ./path/to/entry-point
+npx depchecka ./path/to/entry-point
 ```
 
-`./path/to/entry-point` should be your source directory or where you want `undep` to start recursively looking for deps used (defaults to `./src`).
+`./path/to/entry-point` should be your source directory or where you want `depchecka` to start recursively looking for deps used (defaults to `./src`).
 
 ### Example
 ```
-npx undep ./src
+npx depchecka ./src
 Processed 1288 files in 496ms
 
 Unused deps: {
