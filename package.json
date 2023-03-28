@@ -1,6 +1,6 @@
 {
   "name": "depchecka",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simple node.js script for listing unused dependencies that are in your package.json.",
   "engines": {
     "node": ">=18.11.0"
